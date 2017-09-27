@@ -1,7 +1,7 @@
 <template>
 	<div id='index'>
 		<h1>mini-ps init</h1>
-		<a href='www.zhaofinger.com'>赵的拇指</a>
+		<a href='//www.zhaofinger.com'>赵的拇指</a>
 	</div>
 </template>
 
