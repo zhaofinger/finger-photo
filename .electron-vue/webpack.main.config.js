@@ -34,6 +34,14 @@ let mainConfig = {
 				exclude: /node_modules/
 			},
 			{
+				test: /\.tsx?$/,
+				loader: 'ts-loader',
+				exclude: /node_modules/,
+				options: {
+					appendTsSuffixTo: [/\.vue$/],
+				}
+			},
+			{
 				test: /\.node$/,
 				use: 'node-loader'
 			}
@@ -52,7 +60,7 @@ let mainConfig = {
 		new webpack.NoEmitOnErrorsPlugin()
 	],
 	resolve: {
-		extensions: ['.js', '.json', '.node']
+		extensions: ['.js', '.json', '.node', '.vue', '.ts', '.tsx']
 	},
 	target: 'electron-main'
 }
