@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./render/build/dist",
+    "outDir": "./dist",
     "module": "esnext",
     "target": "es5",
     "lib": ["es6", "dom"],
@@ -8,6 +8,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
+    "baseUrl": ".",
     "rootDir": "./render/src/",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -20,6 +21,8 @@
   "exclude": [
     "node_modules",
     "build",
+    "dist",
+    "main_dist",
     "scripts",
     "acceptance-tests",
     "webpack",

@@ -1,5 +1,16 @@
-import { BrowserWindow } from 'electron';
+import { app, BrowserWindow } from 'electron';
+// import * as path from "path";
+// import * as url from "url";
+let mainWindow: Electron.BrowserWindow;
+// and load the index.html of the app.
+const winUrl = 'http://localhost:3000/';
 
-const mainWindow = new BrowserWindow({width: 800, height: 600});
-
-mainWindow.loadURL('../render/public/index.html');
+app.on("ready", () => {
+  mainWindow = new BrowserWindow({
+    height: 600,
+    width: 800,
+  });
+  mainWindow.loadURL(winUrl);
+  // Open the DevTools.
+  mainWindow.webContents.openDevTools();
+});
