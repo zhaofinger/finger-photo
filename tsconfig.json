@@ -9,7 +9,7 @@
     "jsx": "react",
     "moduleResolution": "node",
     "baseUrl": ".",
-    "rootDir": "./render/src/",
+    "rootDir": "./app/",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
